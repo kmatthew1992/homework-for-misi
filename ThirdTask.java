@@ -11,10 +11,11 @@ public class ThirdTask {
         System.out.println("Kérem adja meg a matematikai művelet jelét (+, -, * vagy /): ");
         char type = scanner.next().charAt(0);
 
-        mathematicalOperation(a, b, type);
+        int result = mathematicalOperation(a, b, type);
+        System.out.println(result);
     }
 
-    private static void mathematicalOperation(int a, int b, char type) {
+    private static int mathematicalOperation(int a, int b, char type) {
         int result = 0;
 
         if (type == '+') {
@@ -25,7 +26,7 @@ public class ThirdTask {
             result = a * b;
         } else if (type == '/') {
             result = a / b;
-        }
-        System.out.println(result);
+        } return result;
+
     }
 }
