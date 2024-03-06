@@ -13,16 +13,16 @@ public class FirstTask {
         System.out.println("Kérem adja meg a metamatikai művelet jelét(+ , -, * vagy /): ");
         char type = scanner.next().charAt(0);
 
-        if(scanner.next().charAt(0) == '+') {
+        if(type == '+') {
             int sum = a + b;
             System.out.println(sum);
-        } else if (scanner.next().charAt(0) == '-') {
+        } else if (type == '-') {
             int subtraction = a - b;
             System.out.println(subtraction);
-        } else if (scanner.next().charAt(0) == '*') {
+        } else if (type == '*') {
             int multiplication = a * b;
             System.out.println(multiplication);
-        } else if (scanner.next().charAt(0) == '/'){
+        } else if (type == '/'){
             int division = a / b;
             System.out.println(division);
         }
