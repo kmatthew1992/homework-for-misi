@@ -26,7 +26,7 @@ public class ThirdTask {
             result = a * b;
         } else if (type == '/') {
             result = a / b;
-        } return result;
-
+        }
+        return result;
     }
 }
